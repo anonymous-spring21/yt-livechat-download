@@ -5,7 +5,7 @@
 Before you run, take the youtube video id from the url.
 For example, for the youtube video at https://www.youtube.com/watch?v=9wkmTio9-UA, the video id would be `9wkmTio9-UA`.
 
-## Running Locally
+## Running Locally (This script is not tested, but it should work)
 
 ### Prerequisite
 
@@ -17,7 +17,7 @@ For example, for the youtube video at https://www.youtube.com/watch?v=9wkmTio9-U
 1. Run via the bash script as follows: `./run-locally.sh <youtube-video-id>`. Ensure to replace `<youtube-video-id>` with the actual video id.
 2. This will put the live chat in a file named `<youtube-video-id>.livechat.txt`.
 
-## Running via Docker
+## Running via Docker (This is tested by me)
 
 Using docker allows us to simplify the dependencies and have a clean environment to run.
 
