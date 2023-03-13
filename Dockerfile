@@ -2,4 +2,8 @@ FROM python
 
 RUN pip install chat-downloader
 
-ENTRYPOINT [ "chat_downloader" ]
+WORKDIR /app
+
+COPY . .
+
+CMD [ "chat_downloader" ]

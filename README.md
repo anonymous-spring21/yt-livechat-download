@@ -26,7 +26,13 @@ Using docker allows us to simplify the dependencies and have a clean environment
 1. Install docker.
 2. Build the image locally as follows: `docker build . -t local/yt-livechat-download`
 
-### Running
+### Running download script (not working at the moment)
 
 1. Run via docker as follows: `./run-via-docker.sh <youtube-video-id>`. Ensure to replace `<youtube-video-id>` with the actual video id.
 2. This will put the live chat in a file named `<youtube-video-id>.livechat.txt`.
+
+### Downloading and searching
+
+1. Run interactively via docker as follows: `./run-it-via-docker.sh`. This will put you in the interactive shell inside the container.
+2. Run `./fetch-chat.sh <youtube-video-id>` inside the container shell. This will download the corresponding youtube live chat and place inside the `/app/data` directory in the container, which in turn places it in the current directory's `./data/` path.
+3. Run `./search-chat.sh "<search-term>"`. This will search the value in `<search-term>` inside all the currently downloaded live chat files.
